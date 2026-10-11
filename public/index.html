@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6d5dfc"><title>QuoteSpace — Quote Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#"><span class="brand-icon">❝</span><span>Quote<span class="brand-accent">Space</span><small>WORDS THAT MOVE YOU</small></span></a><div class="top-actions"><span class="status"><i></i> API connected with fallback</span><button id="themeBtn" class="icon-btn" aria-label="Toggle theme">☼</button></div></header>
+  <main class="layout">
+    <section class="intro"><div class="eyebrow"><span>✦</span> YOUR DAILY MOMENT OF CLARITY</div><h1>A little wisdom<br>goes a <em>long way.</em></h1><p>Find a thought that speaks to you. Save the ones worth keeping.</p></section>
+    <section class="quote-card"><div class="card-top"><span class="pill"><span class="spark">✦</span> DAILY INSPIRATION</span><span id="sourceLabel" class="source-label">Ready when you are</span></div><div class="quote-mark">“</div><div id="quoteText" class="quote-text">The secret of getting ahead is getting started.</div><div class="quote-footer"><div class="avatar" id="avatar">Q</div><div><div id="quoteAuthor" class="author">Mark Twain</div><div id="quoteTopic" class="topic">Mindset · Inspiration</div></div></div><div class="divider"></div><div class="card-actions"><button id="newQuote" class="primary-btn"><span>✦</span> New quote <b>↗</b></button><button id="saveQuote" class="secondary-btn">♡ <span>Save to favorites</span></button><button id="copyQuote" class="round-btn" title="Copy quote">▢</button></div></section>
+    <section class="stats"><div class="stat"><span class="stat-icon purple">♡</span><div><strong id="favoriteCount">0</strong><small>Favorites saved</small></div></div><div class="stat"><span class="stat-icon peach">◷</span><div><strong id="historyCount">0</strong><small>Quotes collected</small></div></div><div class="stat note"><span>✧</span><div><strong>Keep what inspires you.</strong><small>Your collection stays on this server.</small></div></div></section>
+    <section class="collection"><div class="section-heading"><div><div class="eyebrow small-eyebrow">YOUR PERSONAL COLLECTION</div><h2>Saved <em>thoughts.</em></h2></div><div class="tabs"><button class="tab active" data-tab="all">All quotes</button><button class="tab" data-tab="favorites">♡ Favorites</button></div></div><div class="search-row"><span>⌕</span><input id="searchInput" placeholder="Search quotes, authors, topics..." autocomplete="off"><span class="search-hint">⌘ K</span></div><div id="quoteList" class="quote-list"><div class="empty">Your collection is waiting for its first quote.</div></div><button id="loadMore" class="load-more hidden">Load more</button></section>
+    <footer>Made for curious minds <span>✦</span> Keep collecting good thoughts.</footer>
+  </main><div id="toast" class="toast" role="status"></div><script src="/app.js"></script>
+</body></html>
